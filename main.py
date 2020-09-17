@@ -1,8 +1,3 @@
-board_size = 3
-board = [[0 for x in range(board_size)] for y in range(board_size)]
-board[0][2] = 1
-
-
 def find_location(board):
     x = 0
     y = 0
