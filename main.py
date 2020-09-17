@@ -24,10 +24,10 @@ def posible_moves(x, y, board_size):
 
     if x < (board_size-1):
         posible_moves_array.append("(E)ast")
-    if x > 0:
-        posible_moves_array.append("(W)est")
     if y < (board_size-1):
         posible_moves_array.append("(S)outh")
+    if x > 0:
+        posible_moves_array.append("(W)est")
 
 
 
@@ -58,7 +58,7 @@ def move_player(posible_moves_arry, x, y, board):
             if (i + 1) == len(posible_moves_array):
                 print(posible_moves_arry[i], end=".")
             else:
-                print(posible_moves_arry[i], end=" ")
+                print(posible_moves_arry[i], end=" or ")
                 
 
         print("")
